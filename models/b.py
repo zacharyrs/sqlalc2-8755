@@ -22,6 +22,6 @@ class B(Base):
     )
 
     A: Mapped["A_alias"] = relationship(
-        "B",
+        "A",
         back_populates="Bs",
     )
